@@ -1,0 +1,35 @@
+<div class="modal fade" id="modalTeacherShow" tabindex="-1" role="dialog">
+    <!--模态框的模板文件只能有一个根元素-->
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">查看人员信息</h4>
+            </div>
+            <div class="modal-body">
+                <table class="table table-bordered">
+                    <tr>
+                        <td>电影名称</td>
+                        <td>{{title}}</td>
+                        <td rowspan="4">
+                            <img src="../imgs/avatar.jpg" alt="" width="50" height="80">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>上映时间</td>
+                        <td>{{year}}</td>
+                    </tr>
+                    <tr>
+                        <tr>
+                            <td>国家</td>
+                            <td>{{countries}}</td>
+                        </tr>
+                        <td colspan="5">{{summary}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+</div>

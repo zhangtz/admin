@@ -1,0 +1,41 @@
+<div class="panel panel-default">
+    <div class="panel-body">
+        <ol class="breadcrumb">
+            <li><a href="#">人员管理</a></li>
+            <li class="active">人员列表</li>
+        </ol>
+        <div class="row">
+            <div class="col-md-1 col-md-offset-10">
+                <button class="btn btn-success btn-add-personal">添加人员</button>
+            </div>
+        </div>
+        <table class="table table-bordered table-hover">
+            <thead>
+                <th>电影名称</th>
+                <th>花名</th>
+                <th>网址</th>
+                <th>电影id</th>
+                <th>上映时间</th>
+                <th>操作</th>
+            </thead>
+            <tbody>
+                {{each subjects }}
+                <tr>
+                    <td>{{$value.title}}</td>
+                    <td>{{$value.original_title}}</td>
+                    <td>{{$value.alt}}</td>
+                    <td>{{$value.id}}</td>
+                    <td>{{$value.year}}</td>
+                    <td  movie_id="{{$value.id}}">
+                        <button class="btn btn-success btn-show">查看</button>
+                        <button class="btn btn-primary btn-edit">编辑</button>
+                        <button class="btn  btn-danger btn-delete">删除</button>
+                    </td>
+                </tr>
+                {{/each}}
+
+
+            </tbody>
+        </table>
+    </div>
+</div>
